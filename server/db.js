@@ -1,5 +1,6 @@
 import pg from "pg";
 import env from "dotenv";
+env.config();
 const db = new pg.Client({
   user: "postgres",
   host: "localhost",
